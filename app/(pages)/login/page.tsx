@@ -29,8 +29,6 @@ export default function LoginPage() {
         } catch (err) {
           setError('Google login failed')
         }
-      } else if (isAuthenticated) {
-        redirect('/')
       }
       
       setIsLoading(false)
@@ -44,13 +42,8 @@ export default function LoginPage() {
     setIsLoading(true)
     setError('')
 
-    try {
-      await login(email, password)
-    } catch (err) {
-      setError('Login failed. Please check your email and password.')
-    } finally {
-      setIsLoading(false)
-    }
+    await login(email, password)
+    
   }
 
   const handleGoogleLogin = () => {
