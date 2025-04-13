@@ -286,7 +286,7 @@ export default function ChatInput({ input, loading, onInputChange, onSubmit }: C
             onChange={(e) => onInputChange(e.target.value)}
             onKeyDown={handleKeyDown}
             onFocus={() => input.trim() !== '' && suggestions.length > 0 && setShowSuggestions(true)}
-            placeholder="Nhập câu hỏi của bạn..."
+            placeholder="Input"
             className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>

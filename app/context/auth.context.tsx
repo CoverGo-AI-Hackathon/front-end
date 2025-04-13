@@ -89,7 +89,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
           sameSite: 'strict'
         })
         setIsAuthenticated(true)
-        router.replace('/')
       }   
     } catch (error) {
       console.error('Login error:', error)
