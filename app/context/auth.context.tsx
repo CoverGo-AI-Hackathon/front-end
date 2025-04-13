@@ -1,7 +1,7 @@
 'use client'
 
 import { createContext, useContext, useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { redirect, useRouter } from 'next/navigation'
 import { User } from '../interface/IUser'
 import { info } from '../repositories/user.api'
 import Cookies from 'js-cookie' 
@@ -89,6 +89,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
           sameSite: 'strict'
         })
         setIsAuthenticated(true)
+        redirect('/')
       }   
     } catch (error) {
       console.error('Login error:', error)
