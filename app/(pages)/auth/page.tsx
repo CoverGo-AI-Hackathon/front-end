@@ -4,8 +4,7 @@ import { useAuth } from '@/app/context/auth.context';
 import { User } from '@/app/interface/IUser';
 import { changeInfo, changePassword } from '@/app/repositories/user.api';
 import Image from 'next/image';
-import { redirect } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Cookies from 'js-cookie'
 const formatCurrency = (amount: string | undefined) => {
   if (!amount) return '0';

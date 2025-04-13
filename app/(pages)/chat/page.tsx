@@ -1,17 +1,12 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { InsurancePackage } from '@/app/components/product/interface'
-import Image from 'next/image'
-import ChatInput from '@/app/components/AI/chatInput'
-import Messages from '@/app/components/AI/messege'
-import { Message, MessagesProps } from './interface'
 import { Chat } from '@/app/interface/IAI'
 import { ChatAI, getMess } from '@/app/repositories/ai.api'
 import Cookies from 'js-cookie'
-import { message } from 'antd'
 import { Scroll } from './scoll'
 import InsuranceProductList from '@/app/components/product/hoverP'
-import DownloadSection from '@/app/components/product/downLoadP'
+
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<Chat>()

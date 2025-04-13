@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import Link from 'next/link'
 import { InsurancePackage } from './interface'
 import { motion } from 'framer-motion'

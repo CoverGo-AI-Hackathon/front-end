@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import ChatInput from "@/app/components/AI/chatInput"
 import Messages from "@/app/components/AI/messege"
 import { Chat } from "@/app/interface/IAI"
-import Loading from '@/app/components/Loading/loading'
 
 interface propInput {
   messages: Chat | undefined,

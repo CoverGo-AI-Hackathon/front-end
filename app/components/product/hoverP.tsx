@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Image from 'next/image';
 import { InsurancePackage } from './interface';
 import DownloadSection from './downLoadP';
 

@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-import { useAuth } from './app/context/auth.context'
 
 const isPublicRoute = (path: string) => {
   const publicRoutes = ['/login', '/register', '/forgot-password']

@@ -1,6 +1,4 @@
 import { useAuth } from "@/app/context/auth.context"
-import { Chat } from "@/app/interface/IAI"
-import { useEffect, useRef } from "react"
 import Image from "next/image"
 
 interface propInput {
